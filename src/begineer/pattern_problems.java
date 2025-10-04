@@ -3,7 +3,8 @@ package begineer;
 public class pattern_problems {
 
     public static void main(String[] args) {
-        half_number_pyramid(5);
+        int n = 5;
+        half_number_pyramid(n);
     }
 
     // Half Number Pyramid
