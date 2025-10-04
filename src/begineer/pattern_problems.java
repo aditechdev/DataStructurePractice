@@ -8,6 +8,7 @@ public class pattern_problems {
         System.out.println();
         palindromicPattern(n);
         halfDiamondPattern(n);
+        fullDiamondProblem(n);
     }
 
     // Half Number Pyramid
@@ -71,7 +72,6 @@ public class pattern_problems {
     //  *****
     // *******
     //*********
-
     static void halfDiamondPattern(int n) {
         for (int i = 1; i <= n; i++) {
 
@@ -90,6 +90,51 @@ public class pattern_problems {
                 System.out.print(("*"));
             }
             System.out.println();
+        }
+    }
+
+    //    *
+    //   ***
+    //  *****
+    // *******
+    //*********
+    // *******
+    //  *****
+    //   ***
+    //    *
+
+    /*
+     * 7,5,3,2,1
+     * 
+     */
+    static void fullDiamondProblem(int n) {
+        System.out.println("Fulll Diamond problem");
+
+        // Upper half
+        for (int i = 1; i <= n; i++) {
+            // Spaces
+            for (int j = 1; j <= n - i; j++) {
+                System.out.print(" ");
+            }
+
+            for (int j = 1; j <= (2 * i) - 1; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        // Lower half
+        for (int i = n - 1; i >= 1; i--) {
+            for (int j = 1; j <= n - i; j++) {
+                System.out.print(" ");
+            }
+
+            for (int j = 1; j <= 2 * i - 1; j++) {
+                System.out.print("*");
+
+            }
+
+            System.out.println();
+
         }
     }
 }
