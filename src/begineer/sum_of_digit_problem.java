@@ -19,4 +19,8 @@ public class sum_of_digit_problem {
         }
 
     }
+
+    // Swap number
+    static void swapNumber(int newNumber) {
+    }
 }
